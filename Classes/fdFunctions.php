@@ -6,10 +6,11 @@ use Facebook\WebDriver\WebDriverBy;
 use Facebook\WebDriver\WebDriverKeys;
 use Facebook\WebDriver\WebDriverSelect;
 use Facebook\WebDriver\Exception\NoSuchElementException;
+
 class fdFunctions extends TestCase{
   static protected $fd_url = 'http://demo-dev.fusiondirectory.org/fusiondirectory/';
   protected $driver;
-protected function setUp () : void
+  protected function setUp () : void
 {
   // start chrome with 5 seconds timeout
   $host = 'http://localhost:4444/wd/hub'; // this is the default
